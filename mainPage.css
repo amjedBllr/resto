@@ -1,0 +1,366 @@
+
+
+/* all inside header */
+
+header{
+    background-image: url(images/mainPage-images/header-section-background.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 1444/644;
+    
+    
+}
+header h2 , header p , header .btn1 {
+    font-family: var(--second-font);
+    margin-left:10%;
+}
+header h2{
+    font-size: 8em;
+    padding-top: 4%;
+   
+}
+header p{
+    font-size: 1.7em;
+}
+header span{
+    color:#F51E25;
+}
+
+header .btn1{
+    margin-top:5% ;
+}
+header a{
+    color: white;
+}
+
+/*----------menu------------*/
+.menu{
+    width: 100%;
+    aspect-ratio:1440/686 ;
+    background-image:url(images/menu-background2.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul{
+    width:100%;
+    height: 22.5947%;
+    justify-content: center;
+    font-family: var(--second-font);
+    font-size: 2em;
+    color: black;
+    
+}
+.menu li{
+    margin: 0 5%;
+    transition: .15s;
+}
+.menu .menu-btn:hover{
+    transform: translateY(-5px);
+}
+
+.menu .active{
+    transform: translateY(-5px);
+}
+.foods{
+    width: 88%;
+    height: 77.4%;
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 7%;
+    align-items: center;
+    justify-items: center;
+    
+}
+.foods.active-foods{
+    display: grid;
+}
+.food{
+    width: 100%;
+    aspect-ratio: 244/392;
+    background-color:white;
+    border-radius: 0.5em;
+    overflow: hidden;
+    font-family: var(--second-font);
+    position: relative;
+    box-shadow: 0px 0px 20px 0px black;
+}
+.food img{
+    width: 100%;
+    aspect-ratio:255/200;
+    transition: .25s;
+}
+.food:hover img{
+    transform: scale(1.2)  rotate(5deg);
+}
+.food .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    aspect-ratio: 244/192;
+}
+.food h3{
+    font-size:2em;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+.food p{
+    font-size:1.5em;
+}
+.food h2{
+    font-weight: 400;
+    font-size:2.5em;
+    color: var(--green-color);
+    padding: 0;
+    margin: 0;
+}
+.menu-btn{
+    position: relative;
+}
+.menu-btn::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 10%;
+    background-color: var(--green-color);
+    border-radius: 15px;
+    bottom: -30%;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .15s;
+}
+.menu .food:hover .info2{
+    opacity: 100%;
+    height: 51.5%;
+}
+.menu .info2{
+    opacity: 0;
+    transition: .15s , height 0.3s ease-in-out;
+    position: absolute;
+    height: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:  var(--green-color);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+}
+.menu .info2 .btn1 {
+    font-size: 2em;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px rgb(255, 255, 255) solid;
+}
+.menu .info2 p {
+    font-size: 2em;
+    color: white;
+}
+.menu .info2 .btn1:active{
+    color:rgba(255, 255, 255, 0.637);
+    border-color: rgba(255, 255, 255, 0.637);
+}
+
+/*-----------------delivery--------------*/
+
+
+.delivery{
+    background-image: url(images/delivery-background2.png);
+    background-size: cover;
+    width: 100%;
+    aspect-ratio:1440/536 ;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.delivery .delivery-info{
+    margin-left: 8%;
+    width: 40%;
+}
+.delivery .delivery-info h2{
+    font-size: 4.8em;
+    font-weight: 400;
+}
+.delivery .delivery-info p {
+    font-size: 1.5em;
+    padding-top: 6%;
+    padding-bottom:8%;
+}
+.delivery .delivery-info p span{
+    color:var(--black-color);
+}
+.delivery .delivery-info button {
+    color: var(--black-color);
+    background-color: transparent;
+    border: solid 2px var(--black-color);
+    transition: .15s;
+}
+.delivery .delivery-info button:hover{
+    color: white;
+    border-color:white;
+}
+.delivery .delivery-info button:active{
+    color: rgba(255, 255, 255, 0.395);
+    border-color:rgba(255, 255, 255, 0.395);
+}
+
+
+
+
+/*---------booking-----------*/
+
+
+.booking{
+     width: 100%;
+     aspect-ratio:1440/700;
+     background-image: url(images/booking-background2.png);
+     background-size: cover;
+     display: flex;
+    align-items: center;
+}
+
+.booking .booking-info{
+    margin-left: 60%;
+    width: 40%;
+}
+.booking .booking-info h2{
+    font-size: 4.8em;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+.booking .booking-info p {
+    font-size: 1.5em;
+    padding-top: 9%;
+    padding-bottom:13%;
+}
+.booking .booking-info p span{
+    color:var(--green-color);
+}
+.booking .booking-info button {
+    color: var(--green-color);
+    background-color: transparent;
+    border: solid 2px var(--green-color);
+    transition: .15s;
+}
+
+.booking .booking-info button:hover {
+    color: var(--black-color);
+    border-color:var(--black-color);
+}
+.booking .booking-info button:active{
+    color: rgba(0, 0, 0, 0.395);
+    border-color:rgba(0, 0, 0, 0.395);
+}
+
+
+
+@media only screen and (max-width:900px){
+    .menu .food h3{
+        font-size:1.5em;
+    }
+    .menu .food h2{
+        font-size: 2em;
+    }
+    .menu .info2 .btn1 {
+        font-size: 1em;
+    }
+    .menu .info2 p {
+        font-size: 1em;
+    }
+    header h2{
+        font-size: 5em;
+       
+    }
+    header p{
+        font-size: 1.1em;
+    }
+     .btn1{
+        font-size:1.2em ;
+    }
+    .delivery .delivery-info , .booking .booking-info{
+        width: 30%;
+    }
+    .delivery .delivery-info h2 , .booking .booking-info h2{
+        font-size: 3em;
+    }
+    .delivery .delivery-info p , .booking .booking-info p {
+        font-size: 1em;
+        word-wrap: break-word;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    header h2{
+        font-size: 3.5em;
+        padding-top: 4%;
+       
+    }
+    header p{
+        font-size: 0.75em;
+        margin-left: 11%;
+        margin-top: -3%;
+    }
+    
+    header .btn1{
+        margin-top:3% ;
+        font-size: 0.5em;
+        border-radius:0.7em;
+    }
+    .menu li{
+        font-size: 0.5em;
+    }
+    .menu .food h3{
+        font-size:0.9em;
+    }
+    .menu .food h2{
+        font-size:1.1em;
+    }
+    .menu .info2 .btn1 {
+        font-size: 0.7em;
+        border-width: 1px;
+        border-radius: 0.4em;
+    }
+    .menu .info2 p {
+        font-size: 0.5em;
+    } 
+
+    .delivery .delivery-info h2{
+        font-size: 2em;
+    }
+    .delivery .delivery-info p {
+        font-size: 0.5em;
+    
+    }
+    .delivery .delivery-info button {
+        font-size: 0.8em;
+        border-radius: 0.6em;
+        border-width: 1px;
+    }
+    
+    .booking .booking-info h2{
+        font-size: 2em;
+    }
+    .booking .booking-info p {
+        font-size: 0.48em;
+    
+    }
+    .booking .booking-info button {
+        font-size: 0.8em;
+        border-radius: 0.6em;
+        border-width: 1px;
+    }
+}

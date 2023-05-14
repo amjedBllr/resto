@@ -1,0 +1,220 @@
+main{
+    width: 72.2%;
+}
+h3{
+    font-size: 5.2em;
+    font-weight: 500;
+    color: white;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+.inputf{
+    padding-bottom:8%;
+}
+.inputf h4{
+    color: var(--lighbrown-color);
+    font-size: 2em;
+    font-weight: 400;
+    padding-bottom: 2%;
+}
+.inputf input{
+    width: 100%;
+    aspect-ratio:1440/52;
+    padding-left: 2%;
+    font-size:1.5em;
+}
+.inputf div{
+    display: flex;
+    justify-content: space-between;
+}
+.inputf div input{
+    width: 49%;
+    aspect-ratio:700/52;
+}
+
+.form .btn1{
+    border-radius: 10px;
+}
+.cmnt{
+    aspect-ratio: 100/40;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+.cmnt label{
+    color: var(--green-color);
+    font-size: 1.5em;
+    padding-top: 7%;
+}
+.cart{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20%;
+}
+
+
+
+
+
+.cartrow{
+    width: 100%;
+    background-color: var(--lighbrown-color);
+    aspect-ratio: 1040/70;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1.5%;
+    
+}
+
+.inside-cart .cartrow {
+    aspect-ratio: 1040/95;
+    background-color: white;
+}
+.cartel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    font-size: 2em;
+}
+.cartel span{
+    color:var(--green-color);
+}
+.cartrow.price{
+    justify-content: start;
+    padding-left: 3%;
+}
+@media only screen and (max-width:800px){
+    .cartel{
+        width: 100%;
+        font-size: 1.3em;
+    }
+}
+@media only screen and (max-width:600px){
+    .cartel{
+        width: 100%;
+        font-size: 0.8em;
+    }
+}
+.form{
+    position: relative;
+}
+.paymentScreen{
+    position: absolute;
+    width: 60%;
+    aspect-ratio: 2/1;
+    z-index: 900;
+    bottom: 10%;
+    left: 20%;
+    background: rgba(247, 248, 247, 0.801);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+.paymentScreen.paymentScreenActive{
+    display: block;
+}
+#paymentScreenExit{
+    align-items: center;
+    color: red;
+}
+.paymentForm{
+    width: 100%;
+    aspect-ratio: 2/1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10%;
+}
+.paymentForm h3{
+    padding: 0;
+    margin: 0;
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+}
+.paymentForm input{
+    border: none;
+    width: 80%;
+    aspect-ratio: 20/2;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: white;
+    font-size: 1.5em ;
+}
+.paymentForm .paymentButtons{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 5%;
+}
+.paymentForm .btn1{
+    background-color: rgb(0, 0, 0);
+    width: 40%;
+}
+.paymentForm .btn1.two{
+    width: 30%;
+    height: 95%;
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+}
+
+@media only screen and (max-width:800px) {
+    .paymentForm h3{
+        font-size: 1.5em;
+    }
+    .paymentForm input{
+        font-size: 1em ;
+    }
+    .paymentForm .btn1{
+        font-size: 1em;
+    }
+}
+@media only screen and (max-width:600px){
+    h3{
+        padding-top: 40px;
+        padding-bottom: 50px;
+        font-size: 3em;
+    }
+    .inputf h4{
+        font-size: 1.2em; 
+    }
+    .inputf input{
+        font-size:0.9em;
+    }
+    .form .btn1{
+        margin-top: 10%;
+        font-size: 1em;
+        border-radius:0.3em;
+    }
+    .cmnt label{
+        font-size: 1em;
+    }
+    .paymentForm h3{
+        font-size: 1.2em;
+    }
+    .paymentForm input{
+        font-size: 0.8em ;
+        margin-bottom: -6%;
+    }
+    .paymentForm .btn1.two{
+        width: 30%;
+        height: 1.55em;
+    }
+    .paymentForm{
+        aspect-ratio: ;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .paymentScreen{
+        width: 80%;
+        left: 10%;
+    }
+}

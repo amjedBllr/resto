@@ -1,0 +1,95 @@
+main{
+    width: 72.2%;
+}
+h3{
+    font-size: 5.2em;
+    font-weight: 500;
+    color: white;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+input:last-child{
+    padding-top:0%;
+}
+.inputf{
+    padding-bottom:8%;
+}
+.feedbacku{
+    width: 100%;
+    font-size: 1.5em;
+}
+.inputf h4{
+    color: var(--lighbrown-color);
+    font-size: 2em;
+    font-weight: 400;
+    padding-bottom: 2%;
+}
+.inputf input{
+    width: 100%;
+    aspect-ratio:1440/52;
+    padding-left: 2%;
+    font-size:1.5em;
+}
+.inputf .emailu{
+    display: flex;
+    justify-content: space-between;
+}
+.inputf .emailu .btn1{
+    border-radius: 0px;
+    aspect-ratio: 164/52;
+}
+.inputf .emailu .btn1.two{
+    background: var(--green-color);
+    transition: .15s;
+}
+.inputf .emailu .btn1.two:active{
+    opacity: 80%;
+}
+.inputf .emailu .feedbacku{
+    aspect-ratio:1040/188;
+}
+.first-last-name{
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
+}
+.first-last-name .inputf{
+    flex: 1;
+}
+.cmnt{
+    aspect-ratio: 100/40;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+.cmnt label{
+    color: var(--green-color);
+    font-size: 1.5em;
+    padding-top: 7%;
+}
+@media only screen and (max-width:600px){
+    h3{
+        padding-top: 40px;
+        padding-bottom: 50px;
+        font-size: 3em;
+    }
+    main ul{
+        padding-bottom:3em;
+    }
+    .inputf h4{
+        font-size: 1.2em; 
+    }
+    .inputf input{
+        font-size:0.9em;
+    }
+    .cmnt label{
+        font-size: 1em;
+    }
+    .feedbacku{
+        font-size: 0.9em;
+    }
+    .btn1{
+        font-size: 0.8em;
+    }
+}

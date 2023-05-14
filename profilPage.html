@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="navBar.css">
+    <link rel="stylesheet" href="profilPage.css">
+    <title>resto-profil</title>
+</head>
+<body>
+
+
+    <!-----------navBar--------------->
+    <nav >
+        
+        <div class="nav-activetor"></div>
+
+        <img src="images/mainPage-images/finalLogo.jpg">
+        <ul class="active-bar">
+            <li><a href="mainPage.html">HOME</a></li>
+            <li><a href="menuPage.html">MENU</a></li>
+            <li><a href="bookingPage.html">BOOKING</a></li>
+            <li><a href="deliveryPage.html">DELIVERY</a></li>
+            <li><a href="profilPage.html">PROFIL</a></li>
+        </ul>
+        <div class="user">
+            <a><img src="images/bag-shopping-solid.svg"></a>
+            <div class="cartContent">
+                <ul>
+                    <li>food</li>
+                    <li>Qnt</li>
+                    <li>unt.price</li>
+                </ul>
+                <div id="cartItems">
+                    <!----items added here-->
+                    <div class="cartItem">
+                        <p>Sandwich1</p>
+                        <p>2</p>
+                        <p>2.50$</p>
+                        <button class="itemRemover">remove</button>
+                    </div>
+                    <div class="cartItem">
+                        <p>Sandwich2</p>
+                        <p>1</p>
+                        <p>3$</p>
+                        <button class="itemRemover">remove</button>
+                    </div>
+                    <div class="cartItem">
+                        <p>Salad1</p>
+                        <p>1</p>
+                        <p>2$</p>
+                        <button class="itemRemover">remove</button>
+                    </div>
+                    <div class="cartItem">
+                        <p>drink4</p>
+                        <p>2</p>
+                        <p>1$</p>
+                        <button class="itemRemover">remove</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hum-nav">
+        <ul class="active-bar">
+            <li><a href="mainPage.html">HOME</a></li>
+            <li><a href="menuPage.html">MENU</a></li>
+            <li><a href="bookingPage.html">BOOKING</a></li>
+            <li><a href="deliveryPage.html">DELIVERY</a></li>
+            <li class="active"><a href="profilPage.html">PROFIL</a></li>
+        </ul>
+        <a href="https://www.instagram.com/amjed_bellir/?hl=en" target="_blank"><img src="/images/instagram.svg" class="inIconNav"></a>
+    </div>
+
+    <!--------------main---------------------->
+    <div class="afterBarHelper"></div>
+     
+    <main>
+        <h3>PROFIL</h3>
+        <section class="form">
+
+            <div class="inputf">
+                <h4>email</h4>
+                <div class="emailu">
+                    <input type="text" id="iem">
+                    <button class="btn1" onclick="Reloadyo()">reload</button>
+                </div>
+            </div>
+            <div class="first-last-name">
+                <div class="inputf">
+                    <h4>first name</h4>
+                    <input type="text" id="ifn">
+                </div>
+                <div class="inputf">
+                    <h4>last name</h4>
+                    <input type="text" id="iln">
+                </div>
+            </div>
+            <div class="inputf">
+                <h4>phone number</h4>
+                <input type="text" id="ipn">
+            </div>
+            <div class="inputf">
+                <h4>address</h4>
+                <input type="text" id="iad">
+            </div>
+            <div class="inputf">
+                <h4>send a feedback</h4>
+                <div class="emailu">
+                    <textarea class="feedbacku" rows="5" ></textarea>
+                    <button class="btn1 two" onclick="sendFeedBack()">send</button>
+                </div>
+            </div>
+        </section>
+        <div class="cmnt">
+            <label id="lbl">
+               
+            </label>
+        </div>
+    </main>
+
+    <!-------contact------>
+
+    <footer>
+        <div class="contact-info">
+            <h2>contact</h2>
+            <p>location : ntic univ-constantine 2 , algeria</p>
+            <p>phone : +213 556-03-83-33</p>
+            <div class="social">
+                <p>social : </p>
+                <a href="https://www.facebook.com/amjed.bellir/" target="_blank"><img src="images/facebook-icon.png"></a>
+                <a href="https://www.instagram.com/amjed_bellir/?hl=en" target="_blank"><img src="images/square-instagram-icon.png"></a>
+            </div>
+        </div>
+    </footer>
+              
+
+    <script>
+        let email = document.getElementById("iem");
+        let firstName = document.getElementById("ifn");
+        let lastName = document.getElementById("iln");
+        let phoneNumber = document.getElementById("ipn");
+        let address = document.getElementById("iad");
+        let feedback = document.getElementsByClassName("feedbacku")[0];
+        let user = {
+            email , firstName , lastName , phoneNumber , address 
+        }
+        function Reloadyo(){
+            if(checkEmpty(email)) return ;
+            else{
+                if(email.value.toLowerCase()=="amjed@gmail.com"){
+                    firstName.value="amjed";
+                    lastName.value="bellir";
+                    phoneNumber.value="123456789"
+                    address.value="calfornia 23 , middle-e 15"
+                }
+                else if(email.value.toLowerCase()=="sohaib@gmail.com"){
+                    firstName.value="sohaib";
+                    lastName.value="bouzitouna";
+                    phoneNumber.value="623457233"
+                    address.value="elkhroub massinissa , 24 15"
+                }
+                else if(email.value.toLowerCase()=="amine@gmail.com"){
+                    firstName.value="amine";
+                    lastName.value="boutellaa";
+                    phoneNumber.value="0987360196"
+                    address.value="mila kda 23 , mna 98 mlhih"
+                }
+                else{
+                    firstName.placeholder="unknown";
+                    lastName.placeholder="unknown";
+                    phoneNumber.placeholder="unknown"
+                    address.placeholder="unknown"
+                }
+
+        }
+    }
+        function checkEmpty(...inputs){
+            let checker = false ;
+            for(let inputyo of inputs){
+                if(inputyo.value==""||inputyo.value==null){
+                    inputyo.placeholder="this information must be given!!";
+                    checker = true;
+                } 
+                
+            }
+            return checker;
+        }
+
+    function sendFeedBack(){
+        if(!checkEmpty(feedback)){feedbackLabel=document.getElementById("lbl").innerHTML="thanks for writing a feedback for us !! <br>it has been sent successfuly!! ";}
+    }
+        
+    
+
+    </script>
+    <script src="addToCart.js"></script>
+
+</body>
+</html>

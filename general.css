@@ -1,0 +1,51 @@
+/*general*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Alkatra&family=Baloo+2:wght@400;500;700&family=Bebas+Neue&family=Cinzel:wght@400;500;600;700&family=Hanalei&family=Henny+Penny&family=Pacifico&family=Playfair+Display:ital,wght@0,400;1,500;1,600;1,700&family=Righteous&family=Voltaire&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--second-font);
+}
+:root{
+--black-color:#000000;
+--red-color:#F51E25;
+--darkbrown-color:#8C6330;
+--lighbrown-color:#C9B8A8;
+--green-color:#256C25;
+--first-font: 'Aboreto', cursive ;
+--second-font: 'Bebas Neue', cursive;;
+}
+body{
+    margin:0px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section , footer { 
+    margin-top:10px;
+}
+.btn1{
+    border-radius: 18px;
+    color:white;
+    background-color:var(--red-color);
+    border: none;
+    font-family:var(--second-font);
+    font-size: 1.2em;
+    padding: 1.6% 6%;
+    cursor: pointer;
+    transition: .15s;
+}
+.btn1:active{
+    background-color: #b3161bfd;
+}
+.afterBarHelper{
+    height: 120px;
+}
+@media only screen and (max-width:700px) {
+    .afterBarHelper{
+        height: 65px;
+    }
+}

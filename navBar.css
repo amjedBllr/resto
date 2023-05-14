@@ -1,0 +1,238 @@
+
+/* all in navbar */
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    background-image: url(images/navbar-background.png);
+    background-position: center;
+    height: 120px;
+    color: white;
+    font-family: var(--first-font);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+}
+nav .nav-activetor{
+    display: none;
+}
+.hum-nav{
+    display: none;
+}
+nav img{
+    width: 4.3em;
+    filter: invert(100%);
+    
+}
+nav a{
+    font-size: 1.3em;
+    color: white;
+}
+nav a:hover{
+    color: var(--lighbrown-color);
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type:none;
+    transition: .15s;
+}
+nav li:active{
+    color: var(--red-color);
+}
+a{
+    color: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+.user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50%;
+    position: relative;
+}
+.user img{
+    filter: invert(100%);
+    width: 1em;
+}
+.user .cartContent{
+    position: absolute;
+    width: 35vw;
+    height: auto;
+    background: var(--lighbrown-color);
+    right: 0;
+    top: 50px;
+    border-radius: 0.5em;
+    overflow: hidden;
+    display: none;
+}
+.user .activeCartContent{
+    display: block;
+}
+.user .cartContent ul{
+    position: relative;
+    width: 100%;
+    display: flex;
+    background: var(--green-color);
+}
+.user .cartContent li{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 0;
+}
+
+.user .cartContent #cartItems{
+    position: relative;
+    width: 100%;
+}
+
+.user .cartContent .cartItem{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.user .cartContent .cartItem p{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 0;
+    color: black;
+}
+
+.itemRemover{
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border:none;
+    transition: .35s;
+}
+
+.cartItem:hover .itemRemover{
+    left:0;
+}
+
+@media only screen and (max-width:1100px) {
+    .user .cartContent li{
+        font-size: 2em;
+    }
+    .user .cartContent .cartItem p{
+        font-size:1.6em;
+    }
+}
+
+
+
+@media only screen and (max-width:700px) {
+    nav{
+        height: 65px;
+    }
+    nav .nav-activetor{
+        display: block;
+        width:1.2em;
+        background-image: url(images/bars-solid.svg);
+        filter: invert(100%);
+        background-repeat: no-repeat;
+        width: 1.3em;
+        aspect-ratio: 1;
+        transition:0.5s ease;
+    }
+    .nav-activetor.active{
+        background-image: url(images/xmark-solid.svg);
+    }
+    nav img{
+        width: 2em;
+        filter: invert(100%);
+    }
+    nav a{
+        font-size: 1.3em;
+        color: white;
+    }
+    nav ul{
+        display: none;
+    }
+    .user img{
+        filter: invert(100%);
+        width: 0.9em;
+    }
+    .user .activeCartContent{
+        display: block;
+    }
+    .user .cartContent{
+        border-radius: 0.5em;
+        top: 42px;
+        right: -3px;
+    }
+    .user .cartContent li{
+        font-size:0.8em;
+    }
+    
+    .user .cartContent .cartItem p{
+        font-size: 0.7em;
+    }
+    .hum-nav{
+        display: block;
+        position: fixed;
+        z-index: 999;
+        left: -160%;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        background-color:black;
+        transition: 0.5s ease;
+    }
+    .hum-nav.active{
+        left: 0;
+    }
+
+    .hum-nav ul{
+        display: flex;
+        flex-direction: column;
+        margin-top: 65px;
+    }
+    .hum-nav ul li{
+        padding: 6% 46% ;
+        font-size: 1.5em;
+        border-top: 0.0000001em solid rgba(96, 96, 96, 0.479);
+    }
+    .hum-nav ul li:hover{
+        background-color: rgba(228, 139, 23, 0.897);
+    }
+    .hum-nav ul li.active {
+        background-color: rgba(228, 139, 23, 0.897);
+    }
+    .hum-nav ul li a {
+        color: white;
+    }
+    .inIconNav{
+        filter: invert(100%);
+        aspect-ratio: 1;
+        width: 1.5em;
+        margin-top: 40%;
+        margin-left: 5%;
+    }
+}
+
+

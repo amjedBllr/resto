@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainPage.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="navBar.css">
+    <title>resto-home</title>
+</head>
+<body>
+
+
+    <!-----------navBar--------------->
+    <nav >
+        
+        <div class="nav-activetor"></div>
+
+        <img src="images/mainPage-images/finalLogo.jpg">
+        <ul class="active-bar">
+            <li><a href="mainPage.html">HOME</a></li>
+            <li><a href="menuPage.html">MENU</a></li>
+            <li><a href="bookingPage.html">BOOKING</a></li>
+            <li><a href="deliveryPage.html">DELIVERY</a></li>
+            <li><a href="profilPage.html">PROFIL</a></li>
+        </ul>
+        <div class="user">
+            <a><img src="images/bag-shopping-solid.svg"></a>
+            <div class="cartContent">
+                <ul>
+                    <li>food</li>
+                    <li>Qnt</li>
+                    <li>unt.price</li>
+                </ul>
+                <div id="cartItems">
+                    <!----items added here-->
+                    <div class="cartItem">
+                        <p>Sandwich1</p>
+                        <p>2</p>
+                        <p>2.50$</p>
+                        <button class="itemRemover">remove</button>
+                    </div>
+                    <div class="cartItem">
+                        <p>Sandwich2</p>
+                        <p>1</p>
+                        <p>3$</p>
+                        <button class="itemRemover">remove</button>
+                    </div>
+                    <div class="cartItem">
+                        <p>Salad1</p>
+                        <p>1</p>
+                        <p>2$</p>
+                        <button class="itemRemover">remove</button>
+                    </div>
+                    <div class="cartItem">
+                        <p>drink4</p>
+                        <p>2</p>
+                        <p>1$</p>
+                        <button class="itemRemover">remove</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hum-nav">
+        <ul class="active-bar">
+            <li class="active"><a href="mainPage.html">HOME</a></li>
+            <li><a href="menuPage.html">MENU</a></li>
+            <li><a href="bookingPage.html">BOOKING</a></li>
+            <li><a href="deliveryPage.html">DELIVERY</a></li>
+            <li><a href="profilPage.html">PROFIL</a></li>
+        </ul>
+        <a href="https://www.instagram.com/amjed_bellir/?hl=en" target="_blank"><img src="/images/instagram.svg" class="inIconNav"></a>
+    </div>
+
+
+    <!--------------header---------------------->
+    <div class="afterBarHelper"></div>
+    <header>
+        <div class="in-header">
+            <h2>100% off</h2>
+            <p>wanna buy two meals ? , get the first with the price 
+                of<br> two and we'll give you the second for <span>free</span>
+            </p>
+            <button class="btn1"><a href="menuPage.html">order now</a></button>
+        </div>
+    </header>
+
+
+    <!----------menu-section---------->
+    <section class="menu">
+        <ul>
+            <li  class="menu-btn active"><a onclick="changeMenu('sandwichs')">sandwichs</a></li>
+            <li class="menu-btn"><a onclick="changeMenu('soups')" >soups</a></li>
+            <li class="menu-btn"><a onclick="changeMenu('drinks')" >drinks</a></li>
+            <li class="menu-btn"><a onclick="changeMenu('desserts')" >desserts</a></li>
+        </ul>
+        <!--------sandwiches---------->
+        <div class="foods active-foods" id="sandwichs">
+            <div class="food">
+                <img src="images/sandwichspic 1.png">
+                <div class="info">
+                    <h3>Sandwich1</h3>
+                    <h2>2.5$</h2>
+                </div>
+                <div class="info2">
+                    <p>looks dilicious ?</p>
+                    <button class="btn1">add to cart</button>
+                </div>
+
+                
+            </div>
+            <div class="food">
+                <img src="images/sandwich2.jpg">
+                <div class="info">
+                    <h3>Sandwich2</h3>
+                    <h2>3$</h2>
+                </div>
+                <div class="info2">
+                    <p>looks dilicious ?</p>
+                    <button class="btn1">add to cart</button>
+                </div>
+            </div>
+            <div class="food">
+                <img src="images/sandwich3.webp">
+                <div class="info">
+                    <h3>Sandwich3</h3>
+                    <h2>4$</h2>
+                </div>
+                <div class="info2">
+                    <p>looks dilicious ?</p>
+                    <button class="btn1">add to cart</button>
+                </div>
+            </div>
+            <div class="food">
+                <img src="images/sandwich5.jpg">
+                <div class="info">
+                    <h3>Sandwich4</h3>
+                    <h2>2$</h2>
+                </div>
+                <div class="info2">
+                    <p>looks dilicious ?</p>
+                    <button class="btn1">add to cart</button>
+                </div>
+            </div>
+        </div>
+        <!--------soups---------->
+        <div class="foods" id="soups">
+            <div class="food">
+                <img src="images/soup1.jpg">
+                <div class="info">
+                    <h3>soup1</h3>
+                    <h2>3$</h2>
+                </div>
+                <div class="info2">
+                    <p>looks dilicious ?</p>
+                    <button class="btn1">add to cart</button>
+                </div>
+            </div>
+            <div class="food">
+                <img src="images/soup2.jpg">
+                <div class="info">
+                    <h3>soup2</h3>
+                    <h2>3$</h2>
+                </div>
+                <div class="info2">
+                    <p>looks dilicious ?</p>
+                    <button class="btn1">add to cart</button>
+                </div>
+            </div>
+            <div class="food">
+                <img src="images/soup3.webp">
+                <div class="info">
+                    <h3>soup3</h3>
+                    <h2>3$</h2>
+                </div>
+                <div class="info2">
+                    <p>looks dilicious ?</p>
+                    <button class="btn1">add to cart</button>
+                </div>
+            </div>
+            <div class="food">
+                <img src="images/soup4.jpg">
+                <div class="info">
+                    <h3>Soup4</h3>
+                    <h2>3$</h2>
+                </div>
+                <div class="info2">
+                    <p>looks dilicious ?</p>
+                    <button class="btn1">add to cart</button>
+                </div>
+            </div>
+        </div>
+        <!--------drinks---------->
+        <div class="foods" id="drinks">
+            <div class="food">
+                <img src="images/drink1.jpg">
+                <div class="info">
+                    <h3>drink1</h3>
+                    <h2>1$</h2>
+                </div>
+                <div class="info2">
+                    <p>looks dilicious ?</p>
+                    <button class="btn1">add to cart</button>
+                </div>
+            </div>
+            <div class="food">
+                <img src="images/drink2.jpeg">
+                <div class="info">
+                    <h3>drink2</h3>
+                    <h2>1$</h2>
+                </div>
+                <div class="info2">
+                    <p>looks dilicious ?</p>
+                    <button class="btn1">add to cart</button>
+                </div>
+            </div>
+            <div class="food">
+                <img src="images/drink3.webp">
+                <div class="info">
+                    <h3>drink3</h3>
+                    <h2>1$</h2>
+                </div>
+                <div class="info2">
+                    <p>looks dilicious ?</p>
+                    <button class="btn1">add to cart</button>
+                </div>
+            </div>
+            <div class="food">
+                <img src="images/drink4.jpg">
+                <div class="info">
+                    <h3>drink4</h3>
+                    <h2>1$</h2>
+                </div>
+                <div class="info2">
+                    <p>looks dilicious ?</p>
+                    <button class="btn1">add to cart</button>
+                </div>
+            </div>
+        </div>
+        <!--------desserts---------->
+        <div class="foods" id="desserts">
+            <div class="food">
+                <img src="images/des1.jpg">
+                <div class="info">
+                    <h3>dessert1</h3>
+                    <h2>4$</h2>
+                </div>
+                <div class="info2">
+                    <p>looks dilicious ?</p>
+                    <button class="btn1">add to cart</button>
+                </div>
+            </div>
+            <div class="food">
+                <img src="images/des2.jpg">
+                <div class="info">
+                    <h3>dessert2</h3>
+                    <h2>4.5$</h2>
+                </div>
+                <div class="info2">
+                    <p>looks dilicious ?</p>
+                    <button class="btn1">add to cart</button>
+                </div>
+            </div>
+            <div class="food">
+                <img src="images/des3.jpg">
+                <div class="info">
+                    <h3>dessert3</h3>
+                    <h2>3$</h2>
+                </div>
+                <div class="info2">
+                    <p>looks dilicious ?</p>
+                    <button class="btn1">add to cart</button>
+                </div>
+            </div>
+            <div class="food">
+                <img src="images/des4.jpg">
+                <div class="info">
+                    <h3>dessert4</h3>
+                    <h2>2$</h2>
+                </div>
+                <div class="info2">
+                    <p>looks dilicious ?</p>
+                    <button class="btn1">add to cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!------------delivery---------------->
+
+
+    <section class="delivery">
+        <div class="delivery-info">
+            <h2>delivery</h2>
+            <p> if the delivery guy <span>couldn't</span><br>deliver it in 15min you'll get <span>25%</span> discount </p>
+            <a href="deliveryPage.html"><button class="btn1 two">order now</button></a>
+        </div> 
+    </section>
+
+    <!--------------booking-------------->
+
+    <section class="booking">
+        <div class="booking-info">
+            <h2>booking</h2>
+            <p>we got best chairs and tables for you and your ... <br>brother ,<span> let us know </span> when you r coming !</p>
+            <a href="bookingPage.html"><button class="btn1">order now</button></a>
+        </div>
+    </section>
+
+
+    <!-------contact------>
+
+    <footer>
+        <div class="contact-info">
+            <h2>contact</h2>
+            <p>location : ntic univ-constantine 2 , algeria</p>
+            <p>phone : +213 556-03-83-33</p>
+            <div class="social">
+                <p>social : </p>
+                <a href="https://www.facebook.com/amjed.bellir/" target="_blank"><img src="images/facebook-icon.png"></a>
+                <a href="https://www.instagram.com/amjed_bellir/?hl=en" target="_blank"><img src="images/square-instagram-icon.png"></a>
+            </div>
+        </div>
+    </footer>
+              
+
+    <script>
+        let menuBtn = document.getElementsByClassName('menu-btn');
+        let foods = document.getElementsByClassName("foods");
+        function changeMenu(nameyo){
+            for(btn of menuBtn){
+                btn.classList.remove('active');
+            }
+            event.currentTarget.classList.add('active');
+            for(food of foods){
+                food.classList.remove("active-foods");
+            }
+            document.getElementById(nameyo).classList.add("active-foods");
+        }
+    </script>
+    <script src="addToCart.js"></script>
+
+</body>
+</html>
